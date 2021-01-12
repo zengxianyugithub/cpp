@@ -10,6 +10,7 @@ int main()
     
     
     LOG_ERROR("LOG_ERROR test1 .\n");
+    LOG_ERROR("LOG_ERROR test2 .\n");
 
     LOG_WARNING("LOG_WARNING test2 .\n");
 
