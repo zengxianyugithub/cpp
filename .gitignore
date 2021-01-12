@@ -1,0 +1,10 @@
+obj/main.o
+obj/base/Allocator.o
+obj/base/AsyncLogging.o
+obj/base/Condition.o
+obj/base/Logging.o
+obj/base/Mutex.o
+obj/base/Sem.o
+obj/base/Thread.o
+obj/base/ThreadPool.o
+run
