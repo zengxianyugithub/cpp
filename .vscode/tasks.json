@@ -1,0 +1,41 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "make",
+            "type":  "shell",
+            "command": "make",
+            "args":[
+                
+                
+                ], //这里的*.cpp是关键 
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn":["make clean"],///指定，在执行make之前，需先执行make clean
+        },
+        {
+            "label": "make clean",/////////要执行的第二个make命令
+            "type": "shell",
+            "command": "make clean",
+            "args": [],
+            // "group": {
+            //     "kind": "build"
+            // },
+            // "dependsOn":["cmake"],///指定，在执行make之前，需先执行
+        },
+        {
+            "label": "build",/////////要执行的第二个make命令
+            "type": "shell",
+            "command": "echo build",
+            "args": [],
+            // "group": {
+            //     "kind": "build"
+            // },
+            "dependsOn":["make clean","make"],///指定，在执行make之前，需先执行
+        },
+    ]
+}
